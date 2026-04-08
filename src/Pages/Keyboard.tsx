@@ -34,7 +34,7 @@ export default function Keyboard() {
             <div className="w-full flex justify-between text-[20px]"><p>Mechanical 80%</p> <p className="text-gray-500">9</p></div>
             <div className="w-full flex justify-between text-[20px]"><p>Mechanical 100%</p> <p className="text-gray-500">2</p></div>
             <div className="w-full flex justify-between text-[20px]"><p>Dashed React</p> <p className="text-gray-500">1</p></div>
-            <div className="w-full flex justify-between text-[20px]"><p>Wierless</p> <p className="text-gray-500">7</p></div>
+            <div className="w-full flex justify-between text-[20px]"><p>Wierless</p> <p className="text-gray-500">5</p></div>
 
           </div>
         </div>
