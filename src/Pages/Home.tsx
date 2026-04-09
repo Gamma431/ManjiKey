@@ -30,7 +30,7 @@ export default function Home() {
 
 
       <div className="w-full h-auto bg-[url('src/img/black-wihtoutKeys.jpg')] bg-center bg-cover rounded-[15px] my-10">
-        <div className="w-full h-full backdrop-blur-[10px] rounded-[15px] p-6">
+        <div className="w-full h-full backdrop-blur-[5px] rounded-[15px] p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.slice(0, 4).map((product) => (
               <ProductCard key={product.id} product={product} />
