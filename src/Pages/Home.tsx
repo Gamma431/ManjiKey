@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="w-full h-auto p-[2%]">
 
-      <div className="w-full h-[80vh] text-white flex flex-col p-[10%] justify-center bg-[url('/img/White(hero).jpg')] bg-center bg-cover rounded-[15px]">
+      <div className="w-full h-[80vh] text-white flex flex-col p-[10%] justify-center bg-[url('/img/white-hero.jpg')] bg-center bg-cover rounded-[15px]">
         <h1 className="text-[70px] text-[#00021b] font-extrabold">
           The Shop that Gamers Love most
         </h1>
