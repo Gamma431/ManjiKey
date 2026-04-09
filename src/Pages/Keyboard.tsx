@@ -8,7 +8,7 @@ export default function Keyboard() {
       <div className='w-[100%] h-[100vh] flex gap-3'>
         <div className='w-[25%] h-[90vh] bg-gray-900 rounded-[15px] p-[1%] '>
           <div className="h-[10%] w-[100%] flex text-white justify-center items-center">
-            <img src="src/img/Icons/icons8-slider-96.png" className="w-[10%] h-[50%]"/>
+            <img src="/img/Icons/icons8-slider-96.png" className="w-[10%] h-[50%]"/>
             <h2 className="text-[30px]">Fitlers</h2>
           </div>
           <div className="w-[100%] h-[20%] text-white p-[3%]">
@@ -38,7 +38,7 @@ export default function Keyboard() {
 
           </div>
         </div>
-        <div className="w[-70%] h-[90vh] bg-[url('src/img/bluryBg.jpg')] bg-center bg-cover rounded-[15px] grid grid-cols-3 grid-rows-auto overflow-x-scroll p-2">
+        <div className="w[-70%] h-[90vh] bg-[url('/img/blurry-bg.jpg')] bg-center bg-cover rounded-[15px] grid grid-cols-3 grid-rows-auto overflow-x-scroll p-2">
             {product.map((product) => (
               <MinProductCard key={product.id} product={product} />
             ))}
