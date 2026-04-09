@@ -43,7 +43,3 @@ export default HomeFeatProducts;
 export function getHomeFeatProducts(){
     return HomeFeatProducts
 }
-
-export function getProductsById(id){
-    return HomeFeatProducts.find((p) => p.id === Number(id))
-}
