@@ -8,12 +8,12 @@ export default function Keyboard() {
       <div className='w-[100%] h-[100vh] flex gap-3'>
         <div className='w-[25%] h-[90vh] bg-gray-900 rounded-[15px] p-[1%] '>
           <div className="h-[10%] w-[100%] flex text-white justify-center items-center">
-            <img src="public/img/Icons/filter-icon.jpg" className="w-[10%] h-[50%]"/>
+            <div className="w-[10%] h-[50%] bg-[url('/img/Icons/filter-icon.jpg')] bg-contain bg-no-repeat bg-center"></div>
             <h2 className="text-[30px]">Fitlers</h2>
           </div>
           <div className="w-[100%] h-[20%] text-white p-[3%]">
             <h2 className="text-[23px] mx-[2%]">Price Range</h2>
-            <input type="range" className="w-[100%]"/>
+            <input type="range" className="w-[100%] "/>
             <p className="text-[20px] text-center">$0 - $600</p>
           </div>
           <div className="w-[100%] h-[37%] flex flex-col text-white p-[2%]">
