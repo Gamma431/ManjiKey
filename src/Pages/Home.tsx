@@ -40,7 +40,7 @@ export default function Home() {
       </div>
           
       <div className="w-[100%] h-[100vh] bg-gray-900 rounded-[15px] my-10">
-        <div className="w-full h-full rounded-[15px] p-8">
+        <div className="w-full h-full rounded-[15px] p-[2%] pb-[10%]">
           <h1 className="text-white text-[50px] text-center">Top Rated Keyboards</h1>
           <div className="h-full grid grid-cols-4 grid-rows-2 gap-6">
             {product.slice(4, 12).map((product) => (
