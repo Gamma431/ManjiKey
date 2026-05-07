@@ -3,8 +3,9 @@ import MinProductCard from "../components/HomeMiniProd";
 import { getHomeFeatProducts } from "../Data/HomeFeatData";
 import { getProducts } from "../Data/Products";
 
+
 export default function Home() {
-  const products = getHomeFeatProducts() 
+  const products = getHomeFeatProducts()
   const product = getProducts()
   return (
     <div className="w-full h-auto p-[2%]">
@@ -38,7 +39,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-          
+
       <div className="w-[100%] h-[100vh] bg-gray-900 rounded-[15px] my-10">
         <div className="w-full h-full rounded-[15px] p-[2%] pb-[10%]">
           <h1 className="text-white text-[50px] text-center">Top Rated Keyboards</h1>
