@@ -40,7 +40,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[100%] h-[100vh] bg-gray-900 rounded-[15px] my-10">
+      <div className="w-full h-screen bg-gray-900 rounded-[15px] my-10">
         <div className="w-full h-full rounded-[15px] p-[2%] pb-[10%]">
           <h1 className="text-white text-[50px] text-center">Top Rated Keyboards</h1>
           <div className="h-full grid grid-cols-4 grid-rows-2 gap-6">
@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-[100%] h-[60vh] flex justify-center items-center">
+      <div className="w-full h-[60vh] flex justify-center items-center">
         <div className="w-[40%] h-[90%]">
           <img src="https://images.unsplash.com/photo-1714116363269-e34e62803535?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTk4fHxtZWNoYW5pY2FsJTIwa2V5Ym9hcmQlMjBmcm9tJTIwdG9wfGVufDB8fDB8fHww" className="w-[100%] h-full rounded-[55px] object-cover"/>
         </div>
