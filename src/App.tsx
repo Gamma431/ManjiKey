@@ -5,6 +5,7 @@ import About from "./Pages/About"
 import Keyboard from "./Pages/Keyboard"
 import Footer from "./components/Footer"
 import MiniSideMenu from "./components/MiniSideMenu.tsx";
+import Products from "./Pages/Products.tsx"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/keyboards" element={<Keyboard />}/>
+          <Route path="/products" element={<Products />}/>
         </Routes>
         
         <Footer />

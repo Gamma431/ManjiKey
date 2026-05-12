@@ -1,6 +1,8 @@
+import { motion } from "motion/react"
+
 export default function Footer() {
   return (
-    <div className="w-[96%] h-[65vh] mx-[2%] text-white bg-gray-800 rounded-[25px] flex p-[1%]">
+    <motion.div whileInView={{transform:"translateX(0)",opacity:1}} initial={{transform:"translateX(-200px)",opacity:0}}  transition={{duration:1, ease:"easeInOut"}} className="w-[96%] h-[65vh] mx-[2%] text-white bg-gray-800 rounded-[25px] flex p-[1%]">
       <div className="w-[50%] h-full ">
         <div className="w-full h-[40%] bg-[url('/img/Logo/no-bg-logo.png')] bg-cover bg-center"></div>
         <div className="w-full h-[60%] p-[1%] text-[30px] flex gap-[1%]">
@@ -18,7 +20,7 @@ export default function Footer() {
         </div>
         </div>
       </div>
-      <hr className="mx-[2%] h-full border border-gray-400 rounded-[5px]"/>
+      <hr className=" mx-[2%] h-full border border-gray-400 rounded-[5px]"/>
       <div className="w-[50%] h-full ">
         
         <div className="w-full h-full p-[1%] text-[30px] flex justify-center items-center gap-[1%]">
@@ -37,6 +39,6 @@ export default function Footer() {
         </div>
         
       </div>
-    </div>
+    </motion.div>
   )
 }

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export default function Nav() {
   return (
-    <div className="w-[100%] bg-gray-950 h-20 flex justify-between p-[1%] items-center">
+    <div className="w-full bg-gray-950 h-20 flex justify-between p-[1%] items-center">
       <div className="w-[50%] h-full flex items-center text-xl object-cover">
         <div className="w-[25%] h-full bg-[url('/img/Logo/no-bg-logo.png')] bg-cover bg-no-repeat bg-center"></div>
       </div>
@@ -10,6 +10,7 @@ export default function Nav() {
           <Link to="/">Home</Link> 
           <Link to="/about">About</Link> 
           <Link to="/keyboards">Keyboards</Link>
+          <Link to="/products">Products</Link>
       </div>
     </div>
   )

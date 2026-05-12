@@ -1,4 +1,5 @@
 import type { Product } from "../Data/HomeFeatData";
+import { motion } from "motion/react";  
 
 interface Props {
   product: Product;
@@ -6,11 +7,12 @@ interface Props {
 
 export default function MinProductCard({ product }: Props) {
   return (
-    <div className="text-white rounded-xl p-2 shadow hover:shadow-lg transition">
-      <img
+    <div   className="text-white rounded-xl p-2 shadow hover:shadow-lg transition">
+      <motion.img
+        whileHover={{scale:1.2,borderRadius:"40px"}}
         src={product.img}
         alt={product.name}
-        className="w-full h-44 object-cover rounded-lg"
+        className="w-full h-44 object-cover object-center rounded-lg"
       />
 
       <h3 className="mt-3 text-lg font-semibold">
