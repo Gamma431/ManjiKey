@@ -2,9 +2,9 @@ import {motion} from "motion/react";
 
 export default function About() {
   return (
-    <motion.div className="p-[2%] w-full h-auto">
-        <div className="w-full px-[1%] h-auto gap-[2%] flex flex-col items-center justify-start bg-gray-900 rounded-2xl">
-            <h1 className="text-white text-[300px]  def-font"> Lets Key  </h1>
+    <motion.div initial={{ opacity: 0, transform:"translateY(200px)"}} animate={{ opacity: 1, transform:"translateY(0)" }} transition={{duration:1, ease:"easeInOut"}} className="p-[2%] w-full h-auto">
+        <motion.div  initial={{ scale: 0.9 }} animate={{ scale: 1 }}  transition={{duration:1, ease:"easeInOut",delay:0.5}} className="w-full px-[1%] h-auto gap-[2%] flex flex-col items-center justify-start bg-gray-900 rounded-2xl">
+            <motion.h1 whileHover={{scale:1.3,color:"#62a0ea",opacity:1 }}  className="text-white text-[300px]  def-font"> Lets Key  </motion.h1>
             <p className=" text-white text-[60px] def-font">For the last Time</p>
             <div className="w-full h-[70vh] bg-gray-950 rounded-2xl p-[2%] flex justify-center gap-[2%]">
               <motion.div whileHover={{scale:"1.08", boxShadow:"10px 10px 50px black"}}  className="duration-300 w-[40%] rounded-[140px] bg-[url('/img/lets-key.png')] bg-cover bg-center"></motion.div>
@@ -61,7 +61,7 @@ export default function About() {
                 <p className="text-white text-[20px]">Dedicated support team available to assist you with any questions or concerns.</p>
               </div>
             </div>
-        </div>
+        </motion.div>
 
     </motion.div>
   )

@@ -28,7 +28,7 @@ export default function Footer() {
           <p className="text-[20px]">Returns: Return Policy and Process</p>
           <p className="text-[20px]">Shipping: Shipping Information and Tracking</p>
         </div>
-        <div className="w-[50%] h-[50%] p-[10%] text-[30px] flex flex-col  items-center gap-[1%]">
+        <div className="w-[50%] h-[50%] p-[10%] text-[30px] flex flex-col gap-[1%]">
           <h1 className="text-[40px] def-font">Legal</h1>
           <p className="text-[20px]">Privacy Policy: How We Handle Your Data</p>  
           <p className="text-[20px]">Terms of Service: User Agreement and Guidelines</p>

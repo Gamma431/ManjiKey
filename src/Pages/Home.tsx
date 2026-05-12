@@ -2,16 +2,16 @@ import ProductCard from "../components/Home-Features";
 import MinProductCard from "../components/HomeMiniProd";
 import { getHomeFeatProducts } from "../Data/HomeFeatData";
 import { getProducts } from "../Data/Products";
-
+import { motion } from "motion/react";
 
 export default function Home() {
   const products = getHomeFeatProducts()
   const product = getProducts()
   return (
-    <div className="w-full h-auto p-[2%]">
+    <motion.div initial={{ opacity: 0, transform:"translateY(200px)"}} animate={{ opacity: 1, transform:"translateY(0)" }} transition={{duration:1, ease:"easeInOut"}} className="w-full h-auto p-[2%] overflow-hidden">
 
-      <div className="w-full h-[80vh] text-white flex flex-col p-[10%] justify-center bg-[url('/img/white-hero.jpg')] bg-center bg-cover rounded-[15px]">
-        <h1 className="text-[70px] text-[#00021b] font-extrabold">
+      <motion.div  initial={{ scale: 0.9 }} animate={{ scale: 1 }}  transition={{duration:1, ease:"easeInOut",delay:0.5}} className="w-full h-[80vh] text-white flex flex-col p-[10%] justify-center bg-[url('/img/white-hero.jpg')] bg-center bg-cover rounded-[15px]">
+        <h1 className="text-[70px] text-[#00021b] font-extrabold hover:text-white hover:scale-[1.1] transition duration-300">
           The Shop that Gamers Love most
         </h1>
         <h3 className="text-[40px] text-white">
@@ -20,7 +20,7 @@ export default function Home() {
         <p className="text-[20px] text-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, sapiente.
         </p>
-      </div>
+      </motion.div>
 
       <div className="w-full h-[70vh] flex flex-col text-white items-center px-[30%] justify-center">
         <h1 className="text-[80px]">Our Products</h1>
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
 
-      <div className="w-full h-auto bg-[url('/img/black-without-keys.jpg')] bg-center bg-cover rounded-[15px] my-10">
+      <motion.div whileInView={{transform:"translateY(0)",opacity:1}} initial={{transform:"translateY(200px)",opacity:0}}  transition={{duration:1, ease:"easeInOut"}} className="w-full h-auto bg-[url('/img/black-without-keys.jpg')] bg-center bg-cover rounded-[15px] my-10">
         <div className="w-full h-full backdrop-blur-[5px] rounded-[15px] p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.slice(0, 4).map((product) => (
@@ -38,9 +38,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="w-full h-screen bg-gray-900 rounded-[15px] my-10">
+      <motion.div whileInView={{transform:"translateY(0)",opacity:1}} initial={{transform:"translateY(200px)",opacity:0}}  transition={{duration:1, ease:"easeInOut"}} className="w-full h-screen bg-gray-900 rounded-[15px] my-10">
         <div className="w-full h-full rounded-[15px] p-[2%] pb-[10%]">
           <h1 className="text-white text-[50px] text-center">Top Rated Keyboards</h1>
           <div className="h-full grid grid-cols-4 grid-rows-2 gap-6">
@@ -49,9 +49,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="w-full h-[60vh] flex justify-center items-center">
+      <motion.div whileInView={{transform:"translateX(0)",opacity:1}} initial={{transform:"translateX(200px)",opacity:0}}  transition={{duration:2, ease:"easeInOut"}} className="w-full h-[60vh] flex justify-center items-center">
         <div className="w-[40%] h-[90%]">
           <img src="https://images.unsplash.com/photo-1714116363269-e34e62803535?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTk4fHxtZWNoYW5pY2FsJTIwa2V5Ym9hcmQlMjBmcm9tJTIwdG9wfGVufDB8fDB8fHww" className="w-[100%] h-full rounded-[55px] object-cover"/>
         </div>
@@ -60,8 +60,8 @@ export default function Home() {
           <p className=" text-[40px]">$149.99</p>
           <p className="text-[30px]">High-end gaming mechanical keyboard.</p>
         </div>
-      </div>
+      </motion.div>
 
-    </div>
+    </motion.div>
   )
 }
