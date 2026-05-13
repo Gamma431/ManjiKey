@@ -25,7 +25,7 @@ export default function Products() {
     main: `${BASE}img/selfproduct/firstproduct/bluecanonkey.png`,
     images: [
       `${BASE}img/selfproduct/firstproduct/bluecanonkey.png`,
-      `${BASE}img/selfproduct/firstproduct/bluecanon60%.png`,
+      `${BASE}img/selfproduct/firstproduct/bluecanon60.png`,
     ]
   },
 
@@ -38,7 +38,7 @@ export default function Products() {
     main: `${BASE}img/selfproduct/second/wildpirate.png`,
     images: [
       `${BASE}img/selfproduct/second/wildpirate.png`,
-      `${BASE}img/selfproduct/second/Wildpirate60%.png`,
+      `${BASE}img/selfproduct/second/Wildpirate60.png`,
     ]
   },
 
@@ -51,7 +51,7 @@ export default function Products() {
     main: `${BASE}img/selfproduct/third/glasschron.png`,
     images: [
       `${BASE}img/selfproduct/third/glasschron.png`,
-      `${BASE}img/selfproduct/third/glasschron60%.png`,
+      `${BASE}img/selfproduct/third/glasschron60.png`,
     ]
   },
 
@@ -64,7 +64,7 @@ export default function Products() {
     main: `${BASE}img/selfproduct/fourth/vulkantenkai.png`,
     images: [
       `${BASE}img/selfproduct/fourth/vulkantenkai.png`,
-      `${BASE}img/selfproduct/fourth/vulkantenkai60%.png`,
+      `${BASE}img/selfproduct/fourth/vulkantenkai60.png`,
     ]
   },
 
