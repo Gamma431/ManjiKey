@@ -8,6 +8,7 @@ type Product = {
   main: string
   images: string[]
 }
+const BASE = import.meta.env.BASE_URL;
 
 export default function Products() {
 
@@ -15,71 +16,71 @@ export default function Products() {
   const [open, setOpen] = useState<boolean>(false)
 
   const products: Product[] = [
-    {
-      name: "Blue Canon",
-      description:
-        "Blue Canon is a futuristic ocean-inspired mechanical keyboard design focused on deep blue gradients, crystal lighting and clean modern aesthetics.",
-      status:
-        "This product is still in complectation stage. Waiting for production and first customer release.",
-      main: "img/selfproduct/firstproduct/bluecanonkey.png",
-      images: [
-        "img/selfproduct/firstproduct/bluecanonkey.png",
-        "img/selfproduct/firstproduct/bluecanon60%.png",
-      ]
-    },
+  {
+    name: "Blue Canon",
+    description:
+      "Blue Canon is a futuristic ocean-inspired mechanical keyboard design focused on deep blue gradients, crystal lighting and clean modern aesthetics.",
+    status:
+      "This product is still in complectation stage. Waiting for production and first customer release.",
+    main: `${BASE}img/selfproduct/firstproduct/bluecanonkey.png`,
+    images: [
+      `${BASE}img/selfproduct/firstproduct/bluecanonkey.png`,
+      `${BASE}img/selfproduct/firstproduct/bluecanon60%.png`,
+    ]
+  },
 
-    {
-      name: "Wild Pirate",
-      description:
-        "Wild Pirate combines aggressive dark tones with gold accents and a chaotic pirate-inspired visual identity made for gamers and collectors.",
-      status:
-        "This product is still in complectation stage. Waiting for production and first customer release.",
-      main: "img/selfproduct/second/wildpirate.png",
-      images: [
-        "img/selfproduct/second/wildpirate.png",
-        "img/selfproduct/second/Wildpirate60%.png",
-      ]
-    },
+  {
+    name: "Wild Pirate",
+    description:
+      "Wild Pirate combines aggressive dark tones with gold accents and a chaotic pirate-inspired visual identity made for gamers and collectors.",
+    status:
+      "This product is still in complectation stage. Waiting for production and first customer release.",
+    main: `${BASE}img/selfproduct/second/wildpirate.png`,
+    images: [
+      `${BASE}img/selfproduct/second/wildpirate.png`,
+      `${BASE}img/selfproduct/second/Wildpirate60%.png`,
+    ]
+  },
 
-    {
-      name: "Glass Chron",
-      description:
-        "Glass Chron focuses on transparent futuristic visuals mixed with chrome metallic details and sharp reflections for a premium appearance.",
-      status:
-        "This product is still in complectation stage. Waiting for production and first customer release.",
-      main: "img/selfproduct/third/glasschron.png",
-      images: [
-        "img/selfproduct/third/glasschron.png",
-        "img/selfproduct/third/glasschron60%.png",
-      ]
-    },
+  {
+    name: "Glass Chron",
+    description:
+      "Glass Chron focuses on transparent futuristic visuals mixed with chrome metallic details and sharp reflections for a premium appearance.",
+    status:
+      "This product is still in complectation stage. Waiting for production and first customer release.",
+    main: `${BASE}img/selfproduct/third/glasschron.png`,
+    images: [
+      `${BASE}img/selfproduct/third/glasschron.png`,
+      `${BASE}img/selfproduct/third/glasschron60%.png`,
+    ]
+  },
 
-    {
-      name: "Vulcan Tenkai",
-      description:
-        "Vulcan Tenkai is inspired by volcanic energy, lava lighting effects and strong industrial mechanical aesthetics with heavy contrast.",
-      status:
-        "This product is still in complectation stage. Waiting for production and first customer release.",
-      main: "img/selfproduct/fourth/vulkantenkai.png",
-      images: [
-        "img/selfproduct/fourth/vulkantenkai.png",
-        "img/selfproduct/fourth/vulkantenkai60%.png",
-      ]
-    },
+  {
+    name: "Vulcan Tenkai",
+    description:
+      "Vulcan Tenkai is inspired by volcanic energy, lava lighting effects and strong industrial mechanical aesthetics with heavy contrast.",
+    status:
+      "This product is still in complectation stage. Waiting for production and first customer release.",
+    main: `${BASE}img/selfproduct/fourth/vulkantenkai.png`,
+    images: [
+      `${BASE}img/selfproduct/fourth/vulkantenkai.png`,
+      `${BASE}img/selfproduct/fourth/vulkantenkai60%.png`,
+    ]
+  },
 
-    {
-      name: "Blue Emerland Splash",
-      description:
-        "Blue Emerland Splash mixes emerald green reflections with deep aquatic blue lighting to create a clean luxury keyboard concept.",
-      status:
-        "This product is still in complectation stage. Waiting for production and first customer release.",
-      main: "img/selfproduct/fifth/blueemerland-splash.png",
-      images: [
-        "img/selfproduct/fifth/blueemerland-splash.png",
-        "img/selfproduct/fifth/blueemerlandesc.png",
-      ]
-    }
-  ]
+  {
+    name: "Blue Emerland Splash",
+    description:
+      "Blue Emerland Splash mixes emerald green reflections with deep aquatic blue lighting to create a clean luxury keyboard concept.",
+    status:
+      "This product is still in complectation stage. Waiting for production and first customer release.",
+    main: `${BASE}img/selfproduct/fifth/blueemerland-splash.png`,
+    images: [
+      `${BASE}img/selfproduct/fifth/blueemerland-splash.png`,
+      `${BASE}img/selfproduct/fifth/blueemerlandesc.png`,
+    ]
+  }
+]
 
   function openGallery(images: string[]): void {
     setSelectedImages(images)
