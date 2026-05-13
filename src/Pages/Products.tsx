@@ -76,7 +76,7 @@ export default function Products() {
       main: "img/selfproduct/fifth/blueemerland-splash.png",
       images: [
         "img/selfproduct/fifth/blueemerland-splash.png",
-        "public/img/selfproduct/fifth/blueemerlandesc.png",
+        "img/selfproduct/fifth/blueemerlandesc.png",
       ]
     }
   ]
