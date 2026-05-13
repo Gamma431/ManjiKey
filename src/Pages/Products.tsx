@@ -38,7 +38,6 @@ export default function Products() {
       images: [
         "img/selfproduct/second/wildpirate.png",
         "img/selfproduct/second/Wildpirate60%.png",
-  
       ]
     },
 
@@ -95,13 +94,13 @@ export default function Products() {
       className="w-full h-auto p-[2%]"
     >
 
-      <div className="w-full h-[400vh] flex flex-col gap-[1%] bg-indigo-950 rounded-[25px] p-[4%]">
+      <div className="w-full h-auto flex flex-col gap-6 bg-indigo-950 rounded-[25px] p-[4%]">
 
-        <h1 className="text-[5vw] text-white">
+        <h1 className="text-[12vw] sm:text-[8vw] lg:text-[5vw] text-white">
           Project Manji Key
         </h1>
 
-        <p className="w-[60%] text-[1.6vw] text-gray-300">
+        <p className="w-full lg:w-[60%] text-[4vw] sm:text-[2.5vw] lg:text-[1.6vw] text-gray-300">
           Our first designed keyboard collection focused on futuristic aesthetics,
           mechanical engineering and premium visual identity.
         </p>
@@ -113,25 +112,23 @@ export default function Products() {
             initial={{ opacity: 0, y: "10%" }}
             whileInView={{ opacity: 1, y: "0%" }}
             transition={{ duration: 0.8 }}
-            className="w-full h-[80vh] flex rounded-[25px] overflow-hidden shadow-2xl shadow-black bg-black/30"
+            className="w-full h-auto lg:h-[80vh] flex flex-col lg:flex-row rounded-[25px] overflow-hidden shadow-2xl shadow-black bg-black/30"
           >
 
-
             <div
-              className="w-[50%] h-full bg-cover bg-center"
+              className="w-full lg:w-[50%] h-75 sm:h-100 lg:h-full bg-cover bg-center"
               style={{
                 backgroundImage: `url(${product.main})`
               }}
             />
 
+            <div className="w-full lg:w-[50%] h-full flex flex-col gap-6 p-[5%]">
 
-            <div className="w-[50%] h-full flex flex-col gap-[4%] p-[4%]">
-
-              <h2 className="text-[3vw] text-white">
+              <h2 className="text-[8vw] sm:text-[5vw] lg:text-[3vw] text-white">
                 {product.name}
               </h2>
 
-              <p className="text-[1.2vw] text-gray-400 leading-[180%]">
+              <p className="text-[4vw] sm:text-[2.5vw] lg:text-[1.2vw] text-gray-400 leading-[180%]">
                 {product.description}
               </p>
 
@@ -139,12 +136,12 @@ export default function Products() {
                 onClick={() => openGallery(product.images)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-[40%] h-[10%] bg-gray-900 text-white rounded-[25px] border border-gray-700"
+                className="w-full sm:w-[60%] lg:w-[40%] h-13.75 bg-gray-900 text-white rounded-[25px] border border-gray-700"
               >
                 View more images
               </motion.button>
 
-              <p className="text-[1vw] text-gray-300">
+              <p className="text-[3.5vw] sm:text-[2vw] lg:text-[1vw] text-gray-300">
                 <strong>Status:</strong> {product.status}
               </p>
 
@@ -158,22 +155,22 @@ export default function Products() {
 
       {open && (
 
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
+        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-[3%]">
 
-          <div className="w-[85%] h-[85%] bg-gray-950 rounded-[25px] p-[2%] overflow-auto">
+          <div className="w-full lg:w-[85%] h-[90%] bg-gray-950 rounded-[25px] p-[4%] overflow-auto">
 
             <div className="w-full flex justify-end">
 
               <button
                 onClick={() => setOpen(false)}
-                className="text-white text-[2vw]"
+                className="text-white text-[8vw] sm:text-[5vw] lg:text-[2vw]"
               >
                 ✕
               </button>
 
             </div>
 
-            <div className="w-full grid grid-cols-2 gap-[2%] mt-[2%]">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 mt-[2%]">
 
               {selectedImages.map((img: string, index: number) => (
 
@@ -181,11 +178,11 @@ export default function Products() {
                   key={index}
                   src={img}
                   alt=""
-                  className="w-full h-[35vh] object-cover rounded-[25px] "
+                  className="w-full h-62.5 sm:h-[35vh] object-cover rounded-[25px]"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  whileHover={{scale:1.1, marginTop:'10%'}}
+                  whileHover={{scale:1.1, marginTop:'10%',width:"95%"}}
                 />
 
               ))}
