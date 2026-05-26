@@ -1,7 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, type Dispatch, type SetStateAction } from "react";
 import { Link } from "react-router-dom";
 
-export default function Nav() {
+type NavProps = {
+  setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+};
+
+export default function Nav({ setIsSidebarOpen }: NavProps) {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -67,6 +71,9 @@ export default function Nav() {
               </Link>
             ))}
           </div>
+          <button onClick={() => setIsSidebarOpen(true)} className="h-full menu-btn ">
+              <img src="public/img/Icons/cart.png" alt="Menu" className="w-full h-[35%] "/>
+          </button>
         </div>
       </div>
       

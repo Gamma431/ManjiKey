@@ -24,7 +24,7 @@ export default function MinProductCard({ product }: Props) {
         ${product.price}
       </p>
 
-      <button className="mt-3 w-full bg-black text-white py-2 text-[14px] sm:text-[16px] rounded-lg hover:bg-gray-800">
+      <button  className="mt-3 w-full bg-black text-white py-2 text-[14px] sm:text-[16px] rounded-lg hover:bg-gray-800">
         Add to Cart
       </button>
 
